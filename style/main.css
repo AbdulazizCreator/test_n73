@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  font-size: 20px;
+  --text-color: #404242;
+  --btn-color: #58a9a5;
+  --title-color: #1c2323;
+  --box-text-color: #486958;
+  --bg-color: #ccf0e6;
+  /* 1rem = 20px */
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
+.container {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn {
+  background: var(--btn-color);
+  border-radius: 20px 20px 20px 0px;
+  padding: 20px 80px;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.t-c {
+  text-align: center;
+}
+
+.title-text {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.box-text {
+  color: var(--box-text-color);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.title {
+  color: var(--title-color);
+  font-weight: 800;
+  font-size: 3.5rem;
+}
+
+.navbar-nav {
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.burger {
+  display: none;
+  padding: 10px 25px;
+  border: none;
+  background-color: var(--btn-color);
+  border-radius: 5px;
+  color: white;
+  font-size: 25px;
+}
+
+.navbar {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 15px 25px;
+  font-weight: 400;
+  font-size: 25px;
+  color: var(--text-color);
+}
+
+.signin {
+  border-radius: 15px;
+  font-weight: 500;
+}
+
+/* home */
+
+.home-child {
+  flex: 50%;
+}
+
+.home-left p {
+  margin: 50px 0;
+  padding-right: 45px;
+}
+
+.home-right {
+  background-image: url("../images/home_back.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.home-right img {
+  width: 100%;
+}
+
+/* how it works */
+
+.works {
+  position: relative;
+}
+
+#works .title-text {
+  margin: 20px auto 70px;
+}
+
+.works-left {
+  flex: 65%;
+}
+
+.works-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.works-right {
+  flex: 35%;
+  background-color: var(--bg-color);
+  padding: 50px 100px 50px 100px;
+}
+
+.works-right p {
+  margin-bottom: 40px;
+}
+
+.video-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #ffffff;
+  border-radius: 50%;
+  outline: 15px solid rgba(255, 255, 255, 0.4);
+  right: calc(35% - 50px);
+  top: 50%;
+}
+
+.video-btn img {
+  margin-left: 13.5px;
+}
+
+.mission-left {
+  flex: 40%;
+}
+
+.mission-left img {
+  width: 100%;
+}
+
+.mission-right {
+  flex: 60%;
+  padding-left: 120px;
+}
+
+.mission-right .title {
+  font-size: 2.5rem;
+}
+
+.mission-right .title-text {
+  color: var(--box-text-color);
+}
+
+
+/* Testmonial */
+
+.about-left {
+  flex: 40%;
+}
+
+.about-left img {
+  width: 100%;
+}
+
+.about-right {
+  flex: 60%;
+  background-color: var(--bg-color);
+}
+
+.about-right .row {
+  padding-left: 120px;
+}
+
+.about-card {
+  color: var(--box-text-color);
+}
+
+.about-card:nth-child(1) {
+  flex: 30%;
+}
+
+.about-card:nth-child(2) {
+  flex: 30%;
+}
+
+.about-card:nth-child(3) {
+  flex: 40%;
+}
+
+.about-card span:first-child {
+  font-weight: 800;
+  font-size: 3.5rem;
+}
+
+.about-card span:last-child {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.about-content {
+  padding-top: 120px;
+  padding-left: 120px;
+  background-image: url("../images/qoshtirnoq.png");
+  background-repeat: no-repeat;
+  background-position: 75px 75px;
+}
+
+.about-content i {
+  display: block;
+  margin-top: 40px;
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .home-child {
+    flex: 100%;
+  }
+  .home-right {
+    order: 1;
+  }
+  .home-left {
+    order: 2;
+    text-align: center;
+  }
+  .title,
+  .title-text {
+    text-align: center;
+  }
+  .works > div {
+    flex: 100%;
+  }
+  .video-btn {
+    left: calc(50% + 50px);
+    top: calc(100% - 120px);
+  }
+  .mission {
+    flex: 100%;
+  }
+  .mission-right {
+    padding-left: 0;
+  }
+  .about {
+    flex: 100%;
+  }
+  .about-right .row, .about-content {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  :root {
+    font-size: 12px;
+  }
+  .container {
+    max-width: 1140px;
+  }
+  .navbar {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+}
